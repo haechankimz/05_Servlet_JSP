@@ -12,17 +12,36 @@
 
   <h1>피자 주문하기</h1>
 
-  <form action="/ex1">
+  <form action="/ex1" method="get">
     피자 선택 : 
     <select name="pizza">
-      <option value="">페퍼로니 피자 15000원</option>
-      <option value="">쉬림프 피자 18000원</option>
-      <option value="">포테이토 피자 18500원</option>
-      <option value="">불고기 피자 16000원</option>
-      <option value="">고구마 피자 14000원</option>
+      <option value="페퍼로니">페퍼로니 피자 15000원</option>
+      <option value="쉬림프">쉬림프 피자 18000원</option>
+      <option value="포테이토">포테이토 피자 17000원</option>
+      <option value="불고기">불고기 피자 16000원</option>
+      <option value="고구마">고구마 피자 14000원</option>
     </select>
 
+    <br>
+    도우 선택 : 
+    <input type="radio" name="type" value="original"> 오리지널 도우 
+    <input type="radio" name="type" value="cheese"> 치즈크러스트 도우 (+1500원)
 
+    <br>
+
+    기타 옵션 : 
+    <input type="checkbox" name="opt" value="피클"> 피클 추가 (+500원)
+    <input type="checkbox" name="opt" value="핫소스"> 핫소스 추가 (+500원)
+    <input type="checkbox" name="opt" value="디핑소스"> 디핑소스 추가 (+800원)
+    <input type="checkbox" name="opt" value="콜라"> 콜라 사이즈 업 (+1500원)
+
+    <br>
+   
+    주문자명 : <input type="text" name="orderName"> <br>
+    주소   : <input type="text" name="orderAdress" size="50">
+   
+
+    <button>주문하기</button>
   </form>
 
 
