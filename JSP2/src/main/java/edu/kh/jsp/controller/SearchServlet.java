@@ -46,6 +46,7 @@ public class SearchServlet extends HttpServlet{
 			
 			HttpSession session = req.getSession(); // session 객체 얻어오기
 			
+			
 			session.setAttribute("searchMessage", searchMessage);
 			
 			// "/error" redirect
