@@ -26,7 +26,7 @@ public interface TodoListDAO {
 
 	
 	/** 전달 받은 index 번째 todo를 반환
-	 * @param index
+	 * @param index 
 	 * @return index 번째 todo, 없으면 null
 	 */
 	Todo todoDetailView(int index);
